@@ -4,9 +4,9 @@ def my_collect(collection)
   while counter < collection.size
     yield collection[counter]
     if collection[counter].include? " "
-      new_collection << collection[counter].upcase
-    else
       new_collection << collection[counter]
+    else
+      new_collection << collection[counter].upcase
     end
     counter += 1
   end
