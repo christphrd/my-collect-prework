@@ -3,7 +3,11 @@ def my_collect(collection)
   new_collection = []
   while counter < collection.size
     yield collection[counter]
-    new_collection << collection[counter]
+    if collection[counter].include? " "
+      new_collection << collection[counter].upcase
+    else
+      new_collection << collection[counter]
+    end
     counter += 1
   end
   new_collection
