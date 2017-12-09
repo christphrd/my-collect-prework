@@ -2,6 +2,7 @@ def my_collect(collection)
   counter = 0
   new_collection = []
   while counter < collection.size
+    collection[counter].split(" ")
     yield collection[counter].upcase
     new_collection << collection[counter].upcase
     counter += 1
