@@ -4,7 +4,7 @@ def my_collect(collection)
   while counter < collection.size
     yield collection[counter]
     if collection[counter].include? " "
-      new_collection << collection[counter]
+      new_collection << collection[counter].split(" ")
     else
       new_collection << collection[counter].upcase
     end
