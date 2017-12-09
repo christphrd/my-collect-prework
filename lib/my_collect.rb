@@ -6,4 +6,5 @@ def my_collect(collection)
     new_collection << collection.split(" ").first
     counter += 1
   end
+  new_collection
 end
